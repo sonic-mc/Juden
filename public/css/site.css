@@ -70,6 +70,35 @@ h6 {
     gap: 18px;
 }
 
+.nav-toggle {
+    display: none;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    background: rgba(15, 20, 27, 0.35);
+    border-radius: 10px;
+    width: 44px;
+    height: 40px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-toggle-bar {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 999px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
 .logo {
     display: inline-flex;
     align-items: center;
@@ -122,6 +151,18 @@ h6 {
 .nav-cta:hover {
     background: rgba(255, 255, 255, 0.16);
     border-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-nav.nav-open .nav-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.main-nav.nav-open .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.main-nav.nav-open .nav-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 .hero {
@@ -653,12 +694,62 @@ h6 {
 
 @media (max-width: 760px) {
     .nav-inner {
+        min-height: 78px;
         padding: 12px 0;
-        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        margin-left: auto;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: grid;
+        gap: 10px;
+        padding: 0 4%;
+        background: rgba(12, 18, 27, 0.96);
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 16px 28px rgba(0, 0, 0, 0.32);
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        transition: max-height 0.28s ease, opacity 0.24s ease, padding 0.24s ease;
+    }
+
+    .main-nav.nav-open .nav-menu {
+        max-height: 78vh;
+        opacity: 1;
+        pointer-events: auto;
+        padding: 12px 4% 16px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 10px;
     }
 
     .nav-cta {
-        display: none;
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2px;
+        border-radius: 10px;
+        padding: 10px 12px;
     }
 
     .logo img {
