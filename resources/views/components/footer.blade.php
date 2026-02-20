@@ -76,7 +76,7 @@
                     <nav class="footer-legal" aria-label="Legal links">
                         <a href="{{ route('about') }}">Terms & Conditions</a>
                         <a href="{{ route('contact') }}">Privacy Policy</a>
-                        <a href="{{ route('home') }}">Sitemap</a>
+                        <a href="{{ route('home') }}">Website By Gigasoft</a>
                     </nav>
                 </div>
             </div>
