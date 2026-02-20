@@ -39,6 +39,43 @@
         </div>
     </section>
 
+    <section class="section contact-map-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Find Our Branches</p>
+                <h2>Locate Juden stations on the map.</h2>
+            </div>
+
+            <div class="contact-map-grid">
+                <article class="contact-map-card">
+                    <div class="contact-map-frame" role="img" aria-label="Map showing Kwekwe Service Station location">
+                        <iframe
+                            src="https://www.google.com/maps?q=7859+Industrial+Site+Harare+Road+Kwekwe+Zimbabwe&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Kwekwe Service Station map"
+                        ></iframe>
+                    </div>
+                    <h3>Kwekwe Service Station</h3>
+                    <p>7859 Industrial Site, Harare Road, Kwekwe</p>
+                </article>
+
+                <article class="contact-map-card">
+                    <div class="contact-map-frame" role="img" aria-label="Map showing Redwood Ultra City location">
+                        <iframe
+                            src="https://www.google.com/maps?q=Redwood+1+Figtree+Bulawayo+Zimbabwe&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Redwood Ultra City map"
+                        ></iframe>
+                    </div>
+                    <h3>Redwood Ultra City</h3>
+                    <p>Redwood 1, Figtree, Bulawayo, Zimbabwe</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section class="section alt">
         <div class="container">
             <div class="section-heading">

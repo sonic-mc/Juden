@@ -125,6 +125,61 @@
         </div>
     </section>
 
+    <section class="section station-benefits-section">
+        <div class="container station-benefits-layout">
+            <div>
+                <h2>Get more benefits at our service stations.<br>We <span>care about your comfort and safety.</span></h2>
+                <p>
+                    Beyond dependable fuel supply, Juden locations are designed to support everyday convenience for
+                    drivers, families and commercial teams on the move.
+                </p>
+
+                <div class="station-benefits-grid">
+                    <article class="station-benefit-item">
+                        <span class="station-benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 8.5C4.4 6.2 7.7 5 12 5s7.6 1.2 10 3.5" stroke="currentColor" stroke-width="2"/><path d="M5.5 12C7.2 10.4 9.3 9.5 12 9.5s4.8.9 6.5 2.5" stroke="currentColor" stroke-width="2"/><path d="M9 15.5c.9-.8 1.9-1.2 3-1.2 1.1 0 2.1.4 3 1.2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="19" r="1.3" fill="currentColor"/></svg>
+                        </span>
+                        <p>Free WiFi Zone</p>
+                    </article>
+                    <article class="station-benefit-item">
+                        <span class="station-benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 3v18M20 3v18M7 8h10M7 12h10M7 16h10" stroke="currentColor" stroke-width="2"/></svg>
+                        </span>
+                        <p>Restaurant</p>
+                    </article>
+                    <article class="station-benefit-item">
+                        <span class="station-benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16M6 7v4M10 7v4M14 7v4M18 7v4M12 13v8" stroke="currentColor" stroke-width="2"/></svg>
+                        </span>
+                        <p>WC & Shower</p>
+                    </article>
+                    <article class="station-benefit-item">
+                        <span class="station-benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 15V9h6l3 2v4H6Z" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="17" r="1.5" fill="currentColor"/><circle cx="14" cy="17" r="1.5" fill="currentColor"/></svg>
+                        </span>
+                        <p>Children's Area</p>
+                    </article>
+                    <article class="station-benefit-item">
+                        <span class="station-benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="16" height="10" stroke="currentColor" stroke-width="2"/><path d="M9 20h6" stroke="currentColor" stroke-width="2"/></svg>
+                        </span>
+                        <p>TV Hall</p>
+                    </article>
+                    <article class="station-benefit-item">
+                        <span class="station-benefit-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="10" width="16" height="6" stroke="currentColor" stroke-width="2"/><path d="M5 10l2-3h10l2 3" stroke="currentColor" stroke-width="2"/></svg>
+                        </span>
+                        <p>Rest Zone</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="station-benefits-visual">
+                <img src="{{ asset('images/image14.jpg') }}" alt="Juden fuel station convenience and support">
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
             <div class="section-heading">

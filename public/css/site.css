@@ -568,6 +568,78 @@ h6 {
     align-items: start;
 }
 
+.station-benefits-section {
+    background: #f4f6f8;
+}
+
+.station-benefits-layout {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 36px;
+    align-items: center;
+}
+
+.station-benefits-layout h2 {
+    margin: 0;
+    font-size: clamp(1.65rem, 3.1vw, 2.45rem);
+    line-height: 1.22;
+    color: #1f252f;
+}
+
+.station-benefits-layout h2 span {
+    color: var(--brand-red);
+}
+
+.station-benefits-layout > div > p {
+    margin: 16px 0 0;
+    max-width: 62ch;
+    color: #626d79;
+}
+
+.station-benefits-grid {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px 12px;
+}
+
+.station-benefit-item {
+    display: grid;
+    justify-items: start;
+    gap: 10px;
+}
+
+.station-benefit-icon {
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 49, 56, 0.34);
+    color: var(--brand-red);
+    background: #fff;
+}
+
+.station-benefit-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.station-benefit-item p {
+    margin: 0;
+    color: #2a313b;
+    font-weight: 700;
+}
+
+.station-benefits-visual img {
+    width: 100%;
+    max-width: 560px;
+    margin-inline: auto;
+    display: block;
+    border: 6px solid #fff;
+    box-shadow: 0 16px 30px rgba(30, 37, 47, 0.14);
+}
+
 .mini-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -860,6 +932,47 @@ h6 {
 .contact-list a {
     color: var(--brand-red);
     text-decoration: none;
+}
+
+.contact-map-section {
+    background: #f5f7fa;
+}
+
+.contact-map-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.contact-map-card {
+    background: #fff;
+    border: 1px solid #dee5ee;
+    padding: 16px;
+}
+
+.contact-map-frame {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border: 1px solid #d6dde6;
+    overflow: hidden;
+}
+
+.contact-map-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.contact-map-card h3 {
+    margin: 12px 0 4px;
+    color: #1f252f;
+    font-size: 1.2rem;
+}
+
+.contact-map-card p {
+    margin: 0;
+    color: #606b79;
 }
 
 .site-footer {
@@ -1161,6 +1274,7 @@ h6 {
     .hero-grid,
     .split,
     .cards-3,
+    .station-benefits-layout,
     .footer-top,
     .process-grid,
     .partner-banner {
@@ -1169,6 +1283,14 @@ h6 {
 
     .industry-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .station-benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-map-grid {
+        grid-template-columns: 1fr;
     }
 
     .team-grid {
@@ -1306,6 +1428,14 @@ h6 {
 
     .industry-grid {
         grid-template-columns: 1fr;
+    }
+
+    .station-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .station-benefits-layout h2 {
+        font-size: clamp(1.45rem, 6vw, 1.9rem);
     }
 
     .team-member {
