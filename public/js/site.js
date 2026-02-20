@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('#site-menu');
     const navLinks = document.querySelectorAll('.nav-links a');
+    const prefersReducedMotion = globalThis.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const supportsFineHover = globalThis.matchMedia('(hover: hover) and (pointer: fine)').matches;
     let lastScrollY = globalThis.scrollY;
 
     const closeNavMenu = () => {
@@ -84,8 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
         '.page-banner, .section, .card, .mini-card, .hero-card, .footer-top > *, .footer-bottom-inner'
     );
 
-    targets.forEach((element) => {
+    targets.forEach((element, index) => {
         element.classList.add('reveal-on-scroll');
+
+        if (!prefersReducedMotion) {
+            const staggerIndex = index % 8;
+            element.style.setProperty('--reveal-delay', `${staggerIndex * 55}ms`);
+        }
     });
 
     if (!('IntersectionObserver' in globalThis)) {
@@ -112,4 +119,59 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     targets.forEach((element) => observer.observe(element));
+
+    if (!prefersReducedMotion && supportsFineHover) {
+        const interactiveCards = document.querySelectorAll('.card, .process-card, .industry-card, .mini-card');
+
+        interactiveCards.forEach((card) => {
+            card.addEventListener('pointermove', (event) => {
+                const rect = card.getBoundingClientRect();
+                const relativeX = (event.clientX - rect.left) / rect.width;
+                const relativeY = (event.clientY - rect.top) / rect.height;
+                const tiltY = (relativeX - 0.5) * 5;
+                const tiltX = (0.5 - relativeY) * 5;
+
+                card.style.setProperty('--tilt-x', `${tiltX.toFixed(2)}deg`);
+                card.style.setProperty('--tilt-y', `${tiltY.toFixed(2)}deg`);
+                card.style.setProperty('--mx', `${(relativeX * 100).toFixed(2)}%`);
+                card.style.setProperty('--my', `${(relativeY * 100).toFixed(2)}%`);
+            });
+
+            card.addEventListener('pointerleave', () => {
+                card.style.setProperty('--tilt-x', '0deg');
+                card.style.setProperty('--tilt-y', '0deg');
+                card.style.setProperty('--mx', '50%');
+                card.style.setProperty('--my', '50%');
+            });
+        });
+
+        const motionButtons = document.querySelectorAll('.btn, .footer-partner-btn, .footer-store-btn');
+
+        motionButtons.forEach((button) => {
+            button.addEventListener('pointermove', (event) => {
+                const rect = button.getBoundingClientRect();
+                const shiftX = ((event.clientX - rect.left) / rect.width - 0.5) * 6;
+                const shiftY = ((event.clientY - rect.top) / rect.height - 0.5) * 6;
+
+                button.style.transform = `translate(${shiftX.toFixed(2)}px, ${shiftY.toFixed(2)}px)`;
+            });
+
+            button.addEventListener('pointerleave', () => {
+                button.style.transform = '';
+            });
+        });
+    }
+
+    const backToTop = document.querySelector('.footer-back-top');
+
+    if (backToTop) {
+        backToTop.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            globalThis.scrollTo({
+                top: 0,
+                behavior: prefersReducedMotion ? 'auto' : 'smooth',
+            });
+        });
+    }
 });

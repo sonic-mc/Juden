@@ -143,4 +143,166 @@
             </div>
         </div>
     </section>
+
+    <section class="section home-scroll-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Solutions That Scale</p>
+                <h2>Built for households, fleets and high-volume business operations.</h2>
+            </div>
+
+            <div class="cards-3 solution-grid">
+                <article class="card solution-card">
+                    <img class="card-media" src="{{ asset('images/image10.jpg') }}" alt="Fuel station retail service">
+                    <h3>Retail & Station Service</h3>
+                    <p>
+                        Reliable fuel access, quick forecourt turnaround and friendly on-site support for everyday
+                        motorists and local communities.
+                    </p>
+                    <ul class="value-list">
+                        <li>Fast service windows</li>
+                        <li>Consistent fuel availability</li>
+                        <li>Customer-first support</li>
+                    </ul>
+                </article>
+                <article class="card solution-card">
+                    <img class="card-media" src="{{ asset('images/image11.jpg') }}" alt="Fleet refuelling support">
+                    <h3>Fleet Refuelling Programs</h3>
+                    <p>
+                        Structured supply plans for transport operators, commercial fleets and contractor networks that
+                        depend on dependable uptime.
+                    </p>
+                    <ul class="value-list">
+                        <li>Planned supply schedules</li>
+                        <li>Bulk-demand coordination</li>
+                        <li>Dedicated account support</li>
+                    </ul>
+                </article>
+                <article class="card solution-card">
+                    <img class="card-media" src="{{ asset('images/image12.jpg') }}" alt="Industrial energy supply">
+                    <h3>Industrial Energy Supply</h3>
+                    <p>
+                        Stable Diesel 50 and LPG support for industrial operations where quality, timing and safety are
+                        critical.
+                    </p>
+                    <ul class="value-list">
+                        <li>Quality-controlled products</li>
+                        <li>Operational continuity focus</li>
+                        <li>Safety-led handling standards</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt home-scroll-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">How We Work</p>
+                <h2>A clear 4-step process from request to reliable delivery.</h2>
+            </div>
+
+            <div class="process-grid">
+                <article class="process-card">
+                    <span class="process-step">01</span>
+                    <h3>Requirement Review</h3>
+                    <p>We capture your fuel type, expected volume and delivery timing to design a practical plan.</p>
+                </article>
+                <article class="process-card">
+                    <span class="process-step">02</span>
+                    <h3>Supply Planning</h3>
+                    <p>Our team aligns branch capacity, product readiness and service windows around your operation.</p>
+                </article>
+                <article class="process-card">
+                    <span class="process-step">03</span>
+                    <h3>Execution & Support</h3>
+                    <p>We fulfill with disciplined coordination and responsive communication across every touchpoint.</p>
+                </article>
+                <article class="process-card">
+                    <span class="process-step">04</span>
+                    <h3>Continuous Improvement</h3>
+                    <p>We track service outcomes and refine delivery standards to improve speed and reliability.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section home-scroll-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Success Stories</p>
+                <h2>Recent delivery outcomes from sectors we support.</h2>
+            </div>
+
+            <div class="cards-3 case-grid">
+                <article class="card case-card">
+                    <img class="card-media" src="{{ asset('images/image13.jpg') }}" alt="Logistics fleet fueling case">
+                    <div class="case-meta">Logistics • Fleet Operations</div>
+                    <h3>Route Reliability Program for a Regional Fleet</h3>
+                    <p>
+                        A coordinated supply schedule improved fueling consistency and reduced operational disruptions
+                        across a multi-vehicle transport route.
+                    </p>
+                    <a class="case-link" href="{{ route('contact') }}">Discuss Similar Support</a>
+                </article>
+                <article class="card case-card">
+                    <img class="card-media" src="{{ asset('images/image14.jpg') }}" alt="Construction site diesel support">
+                    <div class="case-meta">Construction • Site Operations</div>
+                    <h3>Steady Diesel Support for Time-Critical Project Work</h3>
+                    <p>
+                        With scheduled replenishment and proactive communication, project teams maintained momentum
+                        during high-demand operating periods.
+                    </p>
+                    <a class="case-link" href="{{ route('services') }}">View Service Coverage</a>
+                </article>
+                <article class="card case-card">
+                    <img class="card-media" src="{{ asset('images/image15.jpg') }}" alt="Retail station continuity case">
+                    <div class="case-meta">Retail • Community Service</div>
+                    <h3>Improved Forecourt Continuity for Peak Traffic Hours</h3>
+                    <p>
+                        Branch coordination and customer-focused execution helped sustain service quality during
+                        high-footfall periods.
+                    </p>
+                    <a class="case-link" href="{{ route('about') }}">Learn More About Juden</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt home-scroll-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Industries We Power</p>
+                <h2>Sector-ready service for energy-dependent operations.</h2>
+            </div>
+
+            <div class="industry-grid">
+                <article class="industry-card"><h3>Transport & Logistics</h3><p>Fleet uptime support.</p></article>
+                <article class="industry-card"><h3>Manufacturing</h3><p>Stable diesel and LPG supply.</p></article>
+                <article class="industry-card"><h3>Construction</h3><p>Reliable project-phase fueling.</p></article>
+                <article class="industry-card"><h3>Agriculture</h3><p>Seasonal and routine energy demand.</p></article>
+                <article class="industry-card"><h3>Retail & Hospitality</h3><p>Customer-facing service consistency.</p></article>
+                <article class="industry-card"><h3>General Commercial</h3><p>Responsive daily operational support.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section home-scroll-section section-compact">
+        <div class="container">
+            <div class="partner-banner">
+                <div>
+                    <p class="eyebrow">Expand With Juden</p>
+                    <h2>Need dependable fuel support for your next growth phase?</h2>
+                    <p>
+                        Partner with Juden Petroleum for structured supply, service quality and responsive operational
+                        support.
+                    </p>
+                </div>
+                <div class="cta-row">
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Request A Quote</a>
+                    <a href="{{ route('services') }}" class="btn btn-outline">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
